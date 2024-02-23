@@ -1,5 +1,6 @@
 class Solution:
     def countDistinctIntegers(self, nums: List[int]) -> int:
+        # time O(n*m) & space O(n)
         for i in range(len(nums)):
             nums.append(self.reverseNumber(nums[i]))
         return len(set(nums))
