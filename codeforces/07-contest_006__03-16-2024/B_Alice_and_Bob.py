@@ -1,7 +1,7 @@
-t =  int(input())
+t = int(input())
 
 for _ in range(t):
-    n,m,k = map(int, input().split())
+    n, m, k = map(int, input().split())
     s1 = input()
     s2 = input()
 
@@ -12,10 +12,9 @@ for _ in range(t):
     i, j = 0, 0
     turn = True if arr1[i] < arr2[j] else False
     count = 0
-    print(arr1)
-    print(arr2)
+
     while i < n and j < m:
-        if  turn:
+        if turn:
             prev = arr1[i]
             result.append(arr1[i])
             i += 1

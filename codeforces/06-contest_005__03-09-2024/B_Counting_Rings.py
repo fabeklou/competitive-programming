@@ -3,6 +3,7 @@ ipt = sys.stdin.readline
 st = ipt()
 
 ptr, cons, max_cons = 0, 0, 0
+
 for chr in st:
     if chr == 'O':
         cons += 1

@@ -3,12 +3,12 @@ t = int(input())
 for _ in range(t):
     n, k = map(int, input().split())
     arr = list(map(int, input().split()))
-    
+
     arr.sort()
     sm = sum(arr)
     left = 0
     right = n - 1
-    
+    # 10 11 12 13 15 22
     for i in range(k):
         if left < n - 2 and sm - (arr[left] + arr[left+1]) > sm - arr[n-1]:
             left += 2
@@ -17,3 +17,4 @@ for _ in range(t):
             right -= 1
             sm -= arr[right]
     print(sum(arr[left:right+1]))
+    # print(sm)
